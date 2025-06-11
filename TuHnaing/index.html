@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>To, Tu Hnaing.</strong>
+                        <p>Its been exactly 35 days that we've been talking to each other. I'm glad we met. I'm glad we talked. I'm glad we became something that we are right now. I feel like this is the right day to ask you properly to be my girlfriend. I will not let you down in any circumstances and as a man of my words I promise to not walk out with any shameless ways:thus may treat you the best I could as well. So may I ABM ask you respectfully to accept my proposal? 
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
